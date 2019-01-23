@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}File Download{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="fileURL">File URL</label>
+    <input name="fileURL" id="fileURL" required>
+    <input type="submit" value="download">
+  </form>
+{% endblock %}
